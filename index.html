@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Хотел Хемус - Начало</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Хотел Хемус</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Начало</a></li>
+                    <li><a href="about.html">За нас</a></li>
+                    <li><a href="rooms.html">Стаи</a></li>
+                    <li><a href="contact.html">Контакти</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img src="https://hotelhemus.com/wp-content/uploads/2016/06/HEMUS__Basein_7.jpg" style="width:100%">
+                    <div class="text">Добре дошли в Хотел Хемус</div>
+                </div>
+                <div class="mySlides fade">
+                    <img src="images/gym.jpg" style="width:100%">
+                    <div class="text">Вашето място за релакс и комфорт</div>
+                </div>
+                <div class="mySlides fade">
+                    <img src="images/room2.jpg" style="width:100%">
+                    <div class="text">Лукс и удобства</div>
+                </div>
+            </div>
+        </section>
+    </main>
+	
+	<main>
+   
+    <section class="welcome">
+        <div class="container">
+            <h2>Добре дошли в Хотел Хемус</h2>
+            <p>
+                Хотел „Хемус” е разположен в центъра на Враца, на централния площад „Христо Ботев“,  в непосредствена близост до историческите забележителности на града, търговската зона и административните институции. Хотелът е подходящо място за бизнес клиенти, семейни посещения, гости, търсещи релакс и отмора, а също така и за онези, които са решили да се докоснат до духа и достолепието на Врачанския балкан.
+            </p>
+            <p>
+                Хотелът разполага с 24 единични стаи, 42 двойни  стаи, 7 големи спални, 4 малки спални и 1 апартамент, разполагащи с всичко необходимо за Вашия приятен престой.
+            </p>
+        </div>
+    </section>
+</main>
+ <footer>
+        <div class="container">
+            <p>&copy; 2024 Хотел Хемус. Всички права запазени.</p>
+        </div>
+    </footer>
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let slides = document.getElementsByClassName("mySlides");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            if (slideIndex >= slides.length) {slideIndex = 0}    
+            slides[slideIndex].style.display = "block";
+            slideIndex++;
+            setTimeout(showSlides, 4000);
+        }
+    </script>
+</body>
+</html>
